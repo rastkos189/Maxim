@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <img height = 20%; width = 20% src = "logo.png" >
-        <audio src = "audio.mp3" controls></audio>
-    </div>
-    <div>
-        <h1><b>MAXIM</b></h1>
-    </div>
-    <div id="Navigacija">
-        <div><h3><a href="index.html">Naslovna</a></h3></div>   
-        <div><h3><a href ="#Na_terenu_body">Na terenu</a></h3></div>
-        <div><h3><a href="#Boje_i_lakovi_body">Boje i lakovi</a></h3></div>   
-        <div><h3><a href="#Izolacija_body">Izolacija</a></h3></div>  
-        <div><h3><a href="#Partneri_body">Partneri</a></h3></div> 
-        <div><h3><a href="onama.html" target="_blank">O nama</a></h3></div>   
-        <div><h3><a href="kontakt.html" target="_blank">Kontakt</a></h3></div>
-    </div>
-    <div id = "Boje_i_lakovi_body">
-        <h2><b>Boje i lakovi</h2>
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="logo.png" alt="Maxim Logo">
+            <audio src="audio.mp3" controls></audio>
+        </div>
+        <h1>MAXIM</h1>
+    </header>
+
+    <nav class="navigation">
+        <a href="index.html">Naslovna</a>
+        <a href="#Na_terenu_body">Na terenu</a>
+        <a href="#Boje_i_lakovi_body">Boje i lakovi</a>
+        <a href="#Izolacija_body">Izolacija</a>
+        <a href="#Partneri_body">Partneri</a>
+        <a href="onama.html" target="_blank">O nama</a>
+        <a href="kontakt.html" target="_blank">Kontakt</a>
+    </nav>
+
+    <main>
+        <section id="Boje_i_lakovi_body">
+            <h2>Boje i lakovi</h2>
             <ul>
                 <li><a href="https://www.kansai-helios.rs/" target="_blank">Kansai Helios</a></li>
                 <li><a href="https://www.pitura.co.rs/" target="_blank">Pitura</a></li>
@@ -31,49 +35,48 @@
                 <li><a href="https://www.jub.rs/" target="_blank">Jub</a></li>
                 <li><a href="https://www.maximapaints.com/" target="_blank">Maxima</a></li>
             </ul>
-            
-    </div>
-    <div id = "Izolacija_body">
-        <h2><b>Izolacija</b></h2>
-        <ul>
-            <li><a href="https://srb.sika.com/sr/gra-evinarstvo/hidroizolacije.html" target="_blank">Sika</a></li>
-            <li><a href="https://www.maximapaints.com/" target="_blank">Maxima</a></li>
-            <li><a href="https://www.ceresit.rs/" target="_blank">Ceresit</a></li>
-            <li><a href="https://tkk-group.com/rs" target="_blank">TKK</a></li>
-            <li><a href="https://www.isomat.rs/" target="_blank">Isomat</a></li>
-            <li><a href="https://www.vitex.gr/sr/" target="_blank">Vitex</a></li>
-            <li><a href="https://www.austrotherm.rs/" target="_blank">Austrotherm</a></li>
-            <li><a href="https://www.jub.rs/" target="_blank">Jub</a></li>
-        </ul>
+        </section>
 
-    </div>
-    <div id = "Na_terenu_body">
-        <h2><b>Na terenu</b></h2>
-        <video src = "naterenu.mp4" controls></video>
-    </div>
-    <div id = "Partneri_body">
-        <h2><b>Partneri</b></h2>
-        <table border="0" cellspacing="10">
-            <tr>
-                <td align="center">
-                    <img src="maxima.png" alt="Maxima" width="200"><br>
+        <section id="Izolacija_body">
+            <h2>Izolacija</h2>
+            <ul>
+                <li><a href="https://srb.sika.com/sr/gra-evinarstvo/hidroizolacije.html" target="_blank">Sika</a></li>
+                <li><a href="https://www.maximapaints.com/" target="_blank">Maxima</a></li>
+                <li><a href="https://www.ceresit.rs/" target="_blank">Ceresit</a></li>
+                <li><a href="https://tkk-group.com/rs" target="_blank">TKK</a></li>
+                <li><a href="https://www.isomat.rs/" target="_blank">Isomat</a></li>
+                <li><a href="https://www.vitex.gr/sr/" target="_blank">Vitex</a></li>
+                <li><a href="https://www.austrotherm.rs/" target="_blank">Austrotherm</a></li>
+                <li><a href="https://www.jub.rs/" target="_blank">Jub</a></li>
+            </ul>
+        </section>
+
+        <section id="Na_terenu_body">
+            <h2>Na terenu</h2>
+            <video src="naterenu.mp4" controls></video>
+        </section>
+
+        <section id="Partneri_body">
+            <h2>Partneri</h2>
+            <div class="partner-gallery">
+                <div class="partner">
+                    <img src="maxima.png" alt="Maxima">
                     <p><a href="https://www.maximapaints.com/" target="_blank">Maxima</a></p>
-                </td>
-                <td align="center">
-                    <img src="ceresit.gif" alt="Ceresit" width="200"><br>
+                </div>
+                <div class="partner">
+                    <img src="ceresit.gif" alt="Ceresit">
                     <p><a href="https://www.ceresit.rs/" target="_blank">Ceresit</a></p>
-                </td>
-                <td align="center">
-                    <img src="austrotherm.png" alt="Austrotherm" width="200"><br>
+                </div>
+                <div class="partner">
+                    <img src="austrotherm.png" alt="Austrotherm">
                     <p><a href="https://www.austrotherm.rs/" target="_blank">Austrotherm</a></p>
-                </td>
-                <td align="center">
-                    <img src="jub.png" alt="Jub" width="200"><br>
+                </div>
+                <div class="partner">
+                    <img src="jub.png" alt="Jub">
                     <p><a href="https://www.jub.rs/" target="_blank">Jub</a></p>
-                </td>
-            </tr>
-        </table>
-         
-    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
