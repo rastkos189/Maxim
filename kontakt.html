@@ -8,26 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <header>
         <h1>Naše kontakt informacije</h1>
-    </div>
-   <div>
-    <ul>
-        <li><p><b>Adresa : </b>Dragiše Mišovića 16, Lučani 32240</p></li>
-        <li><p><b>Telefon : </b>0612306023</p></li>
-        <li><p><b>E-mail : </b>maxim@gmail.com</p></li>  
-    </ul>
-   </div>
-   <div id="frome">
-    <form action="mailto:rastkos189@gmail.com" method="post" enctype="text/plain">
-        <label>Unesite ime: </label>
-        <input type="text" name="tvojeIme"><br><br>
-        <label>Unesite E-mail: </label>
-        <input type="email" name="tvojEmail"><br><br>
-        <label>Unesite recenziju: </label><br>
-        <textarea name="textPoruke" id="" cols="30" rows="10"></textarea><br>
-        <input type="submit" value="Pošalji">
-      </form>
-   </div>
+    </header>
+    
+    <main>
+        <div class="contact-info">
+            <ul>
+                <li><p><b>Adresa:</b> Dragiše Mišovića 16, Lučani 32240</p></li>
+                <li><p><b>Telefon:</b> 0612306023</p></li>
+                <li><p><b>E-mail:</b> maxim@gmail.com</p></li>  
+            </ul>
+        </div>
+
+        <div id="frome">
+            <form action="mailto:rastkos189@gmail.com" method="post" enctype="text/plain">
+                <label>Unesite ime: </label>
+                <input type="text" name="tvojeIme" required><br><br>
+                <label>Unesite E-mail: </label>
+                <input type="email" name="tvojEmail" required><br><br>
+                <label>Unesite recenziju: </label><br>
+                <textarea name="textPoruke" cols="30" rows="10" required></textarea><br>
+                <input type="submit" value="Pošalji">
+            </form>
+        </div>
+    </main>
 </body>
 </html>
